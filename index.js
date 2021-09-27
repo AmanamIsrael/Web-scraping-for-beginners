@@ -19,7 +19,7 @@ axios(url).then(response => {
         const category = _parsedHTML(this).find('.article-list-pretitle').find('a').text()
         const url =  _parsedHTML(this).find('.article-list-desc').find('a').attr('href')
 
-        //appending data to existing
+        //appending data to existing array
         articles.push({
             title,
             category,
